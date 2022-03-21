@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "titanium_ingot",
+  "ingredient": {
+    "item": "chroniclesofthelightside:titanium_ore_overworld"
+  },
+  "result": "chroniclesofthelightside:titanium_ingot",
+  "experience": 2.5,
+  "cookingtime": 200
+}

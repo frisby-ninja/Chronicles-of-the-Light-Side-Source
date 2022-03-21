@@ -1,0 +1,36 @@
+{
+  "item.chroniclesofthelightside.titanium_ingot": "Lingot de Titane",
+  "item.chroniclesofthelightside.titanium_nugget": "Pépite de Titane",
+  "item.chroniclesofthelightside.raw_titanium": "Titane Brut",
+  "item.chroniclesofthelightside.blowtorch": "Chalumeau",
+  "item.chroniclesofthelightside.blowchip": "Chalupuce",
+  "item.chroniclesofthelightside.electrical_contact": "Contact Electrique",
+  "item.chroniclesofthelightside.titanium_helmet": "Casque de Titane",
+  "item.chroniclesofthelightside.titanium_chestplate": "Plastron de Titane",
+  "item.chroniclesofthelightside.titanium_leggings": "Jambières de Titane",
+  "item.chroniclesofthelightside.titanium_boots": "Bottes de Titane",
+  "item.chroniclesofthelightside.titanium_sword": "Epée de Titane",
+  "item.chroniclesofthelightside.titanium_pickaxe": "Pioche de Titane",
+  "item.chroniclesofthelightside.titanium_shovel": "Pelle de Titane",
+  "item.chroniclesofthelightside.titanium_hoe": "Houe de Titane",
+  "item.chroniclesofthelightside.axe": "Hache de Titane",
+
+  "block.chroniclesofthelightside.titanium_block": "Block de Titane",
+  "block.chroniclesofthelightside.titanium_ore_nether": "Minerai de Titane du Nether",
+  "block.chroniclesofthelightside.titanium_ore_end": "Minerai de Titane de l'Ender",
+  "block.chroniclesofthelightside.titanium_ore_deepslate": "Minerai de Titane des Abîmes",
+  "block.chroniclesofthelightside.titanium_ore_overworld": "Minerai de Titane",
+  "block.chroniclesofthelightside.bulletproof_glass": "Verre Pare-Balles",
+  "block.chroniclesofthelightside.redwood_log": "Bûche de Séquoia",
+  "block.chroniclesofthelightside.redwood_planks": "Planches de Séquoia",
+  "block.chroniclesofthelightside.redwood_wood": "Bois de Séquoia",
+  "block.chroniclesofthelightside.stripped_redwood_log": "Bûche de Séquoia écorcée",
+  "block.chroniclesofthelightside.stripped_redwood_wood": "Bois de Séquoia écorcée",
+  "block.chroniclesofthelightside.redwood_sapling": "Pousse de Séquoia",
+  "block.chroniclesofthelightside.redwood_leaves": "Feuilles de Séquoia",
+  "item.chroniclesofthelightside.frisby_disc": "Disque de Lancer de frisby_ninja",
+
+  "enchantment.chroniclesofthelightside.lightning_striker": "Frappeur de Foudre",
+
+  "itemGroup.ninjaModTab": "Équipement de Ninja"
+}

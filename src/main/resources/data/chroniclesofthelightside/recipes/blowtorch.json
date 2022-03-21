@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "|¤-",
+    " ! ",
+    "|||"
+  ],
+  "key": {
+    "-": {
+     "item": "chroniclesofthelightside:bulletproof_glass"
+    },
+
+    "|": {
+      "item": "chroniclesofthelightside:titanium_block"
+    },
+
+    "!": {
+      "item": "chroniclesofthelightside:titanium_ingot"
+    },
+
+    "¤": {
+      "item": "chroniclesofthelightside:blowchip"
+    }
+  },
+  "result": {
+    "item": "chroniclesofthelightside:blowtorch"
+  }
+}

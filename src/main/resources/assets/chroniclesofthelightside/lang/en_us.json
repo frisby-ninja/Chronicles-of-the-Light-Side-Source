@@ -1,0 +1,38 @@
+{
+  "item.chroniclesofthelightside.titanium_ingot": "Titanium Ingot",
+  "item.chroniclesofthelightside.titanium_nugget": "Titanium Nugget",
+  "item.chroniclesofthelightside.raw_titanium": "Raw Titanium",
+  "item.chroniclesofthelightside.blowtorch": "Blowtorch",
+  "item.chroniclesofthelightside.blowchip": "Blowchip",
+  "item.chroniclesofthelightside.electrical_contact": "Electrical Contact",
+  "item.chroniclesofthelightside.titanium_helmet": "Titanium Helmet",
+  "item.chroniclesofthelightside.titanium_chestplate": "Titanium Chestplate",
+  "item.chroniclesofthelightside.titanium_leggings": "Titanium Leggings",
+  "item.chroniclesofthelightside.titanium_boots": "Titanium Boots",
+  "item.chroniclesofthelightside.titanium_sword": "Titanium Sword",
+  "item.chroniclesofthelightside.titanium_pickaxe": "Titanium Pickaxe",
+  "item.chroniclesofthelightside.titanium_shovel": "Titanium Shovel",
+  "item.chroniclesofthelightside.titanium_hoe": "Titanium Hoe",
+  "item.chroniclesofthelightside.axe": "Titanium Axe",
+  "item.chroniclesofthelightside.frisby_disc": "frisby_ninja's Throwing Disc",
+
+  "block.chroniclesofthelightside.titanium_block": "Titanium Block",
+  "block.chroniclesofthelightside.titanium_ore_overworld": "Titanium Ore",
+  "block.chroniclesofthelightside.titanium_ore_nether": "Nether Titanium Ore",
+  "block.chroniclesofthelightside.titanium_ore_end": "End Titanium Ore",
+  "block.chroniclesofthelightside.titanium_ore_deepslate": "Deepslate Titanium Ore",
+  "block.chroniclesofthelightside.bulletproof_glass": "Bulletproof Glass",
+  "block.chroniclesofthelightside.redwood_log": "Redwood Log",
+  "block.chroniclesofthelightside.redwood_planks": "Redwood Planks",
+  "block.chroniclesofthelightside.redwood_wood": "Redwood Wood",
+  "block.chroniclesofthelightside.stripped_redwood_log": "Stripped Redwood Log",
+  "block.chroniclesofthelightside.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.chroniclesofthelightside.redwood_sapling": "Redwood Sapling",
+  "block.chroniclesofthelightside.redwood_leaves": "Redwood Leaves",
+
+  "enchantments.chroniclesofthelightside.lightning_striker": "Lightning Striker",
+
+
+  "itemGroup.ninjaModTab": "Ninja Gear"
+
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#/",
+    "#/#",
+    "/#/"
+  ],
+  "key": {
+    "#": {
+     "item": "chroniclesofthelightside:iron_ingot"
+    },
+
+    "/": {
+      "item": "chroniclesofthelightside:glass_block"
+    }
+  },
+  "result": {
+    "item": "chroniclesofthelightside:bulletproof_glass"
+  }
+}

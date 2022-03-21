@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "chroniclesofthelightside:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "chroniclesofthelightside:titanium_block"
+  }
+}
