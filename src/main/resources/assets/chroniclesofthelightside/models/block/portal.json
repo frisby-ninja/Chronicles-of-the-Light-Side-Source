@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chroniclesofthelightside:block/portal_top",
+    "side": "chroniclesofthelightside:block/portal_side"
+  }
+}

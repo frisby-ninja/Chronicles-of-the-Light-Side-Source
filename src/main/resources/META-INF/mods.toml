@@ -29,7 +29,7 @@ displayName="The Chronicles of the Light Side" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="" #optional
 # A text field displayed in the mod UI
-credits="Programmer : frisby_ninja, Tutorials : Kaupenjoe and Jorrit Tyberghein, Example mod : CurseForge" #optional
+credits="Programmer : frisby_ninja, Tutorials : Kaupenjoe and Jorrit Tyberghein, Example mod : Forge" #optional
 # A text field displayed in the mod UI
 authors="Ninja_Works" #optional
 # The description text for the mod (multi line!) (#mandatory)

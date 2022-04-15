@@ -10,6 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ninjaworks.chroniclesofthelightside.block.ModBlocks;
 import net.ninjaworks.chroniclesofthelightside.item.ModItems;
+import net.ninjaworks.chroniclesofthelightside.util.ModItemProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,7 +19,7 @@ public class chroniclesofthelightside {
     public static final String MOD_ID = "chroniclesofthelightside";
 
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     // Add a comment
     public chroniclesofthelightside() {
@@ -37,10 +38,13 @@ public class chroniclesofthelightside {
     private void clientSetup(final FMLClientSetupEvent event) {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BULLETPROOF_GLASS.get(), RenderType.translucent());
+
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-           });
+
+        });
     }
 }

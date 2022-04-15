@@ -1,17 +1,14 @@
-package net.ninjaworks.chroniclesofthelightside.world.feature;
+package net.ninjaworks.chroniclesofthelightside.world.feature.tree;
 
 import net.minecraft.core.Holder;
-import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.data.worldgen.features.OreFeatures;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
+import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.ninjaworks.chroniclesofthelightside.block.ModBlocks;
+import net.ninjaworks.chroniclesofthelightside.world.feature.ModConfiguredFeatures;
 
+import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Random;
 
 public class ModOrePlacement {
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

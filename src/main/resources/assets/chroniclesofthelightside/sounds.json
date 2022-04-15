@@ -1,0 +1,32 @@
+{
+  "titanium_block_break": {
+    "subtitle": "chroniclesofthelightside.titanium_block_break",
+    "sounds": [
+      "chroniclesofthelightside:titanium_block_break"
+    ]
+  },
+  "titanium_block_step": {
+    "subtitle": "chroniclesofthelightside.titanium_block_step",
+    "sounds": [
+      "chroniclesofthelightside:titanium_block_step"
+    ]
+  },
+  "titanium_block_place": {
+    "subtitle": "chroniclesofthelightside.titanium_block_place",
+    "sounds": [
+      "chroniclesofthelightside:titanium_block_place"
+    ]
+  },
+  "titanium_block_hit": {
+    "subtitle": "chroniclesofthelightside.titanium_block_hit",
+    "sounds": [
+      "chroniclesofthelightside:titanium_block_hit"
+    ]
+  },
+  "titanium_block_fall": {
+    "subtitle": "chroniclesofthelightside.titanium_block_fall",
+    "sounds": [
+      "chroniclesofthelightside:titanium_block_fall"
+    ]
+  }
+}

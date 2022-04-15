@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "chroniclesofthelightside:block/titanium_ore_end"
+      "model": "chroniclesofthelightside:block/interblock"
     }
   }
 }

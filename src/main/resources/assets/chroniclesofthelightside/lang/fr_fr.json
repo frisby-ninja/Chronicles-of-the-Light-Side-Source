@@ -20,6 +20,8 @@
   "block.chroniclesofthelightside.titanium_ore_end": "Minerai de Titane de l'Ender",
   "block.chroniclesofthelightside.titanium_ore_deepslate": "Minerai de Titane des Abîmes",
   "block.chroniclesofthelightside.titanium_ore_overworld": "Minerai de Titane",
+  "block.chroniclesofthelightside.titanium_ore_internet": "Minerai de Titane de l'Internet",
+  "block.chroniclesofthelightside.interblock": "Block de l'Internet",
   "block.chroniclesofthelightside.bulletproof_glass": "Verre Pare-Balles",
   "block.chroniclesofthelightside.redwood_log": "Bûche de Séquoia",
   "block.chroniclesofthelightside.redwood_planks": "Planches de Séquoia",
@@ -29,6 +31,8 @@
   "block.chroniclesofthelightside.redwood_sapling": "Pousse de Séquoia",
   "block.chroniclesofthelightside.redwood_leaves": "Feuilles de Séquoia",
   "item.chroniclesofthelightside.frisby_disc": "Disque de Lancer de frisby_ninja",
+  "item.chroniclesofthelightside.atomiser": "Atomiseur",
+  "item.chroniclesofthelightside.atom": "Atome",
 
   "enchantment.chroniclesofthelightside.lightning_striker": "Frappeur de Foudre",
 

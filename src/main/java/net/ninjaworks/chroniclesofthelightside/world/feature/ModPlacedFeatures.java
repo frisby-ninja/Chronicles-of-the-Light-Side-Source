@@ -32,6 +32,6 @@ public class ModPlacedFeatures {
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_OVERWORLD.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_DEEPSLATE.get().defaultBlockState()));
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE = FeatureUtils.register("titanium_oreà",
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE_PLACED = FeatureUtils.register("chroniclesofthelightside:titanium_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 9));
     }

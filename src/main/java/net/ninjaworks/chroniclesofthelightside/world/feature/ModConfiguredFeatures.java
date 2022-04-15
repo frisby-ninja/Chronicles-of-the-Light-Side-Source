@@ -38,7 +38,6 @@ public class ModConfiguredFeatures {
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(REDWOOD_CHECKED,
                             0.5F)), REDWOOD_CHECKED));
 
-
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_TITANIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_OVERWORLD.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_DEEPSLATE.get().defaultBlockState()));
