@@ -24,7 +24,7 @@ public class Ores {
     public static final RuleTest IN_ENDSTONE = new TagMatchTest(Tags.Blocks.END_STONES);
 
     public static Holder<PlacedFeature> INTERNET_OREGEN;
-    public static Holder<PlacedFeature> OVERWORLD_OREGEN;
+    public static Holder<PlacedFeature> OVERWORLD_OREGEN; 
     public static Holder<PlacedFeature> DEEPSLATE_OREGEN;
     public static Holder<PlacedFeature> NETHER_OREGEN;
     public static Holder<PlacedFeature> END_OREGEN;
