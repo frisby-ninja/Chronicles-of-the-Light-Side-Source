@@ -28,10 +28,16 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.REDWOOD_SPAWN, VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3, 0.1f, 2)));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_TITANIUM_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_OVERWORLD.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_DEEPSLATE.get().defaultBlockState()));
+    public static final Holder<PlacedFeature> TITANIUM_ORE_PLACED = PlacementUtils.register("titanium_ore_placed",
+            ModConfiguredFeatures.TITANIUM_ORE, ModOrePlacement.commonOrePlacement(5, // VeinsPerChunk
+                    HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE_PLACED = FeatureUtils.register("chroniclesofthelightside:titanium_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 9));
-    }
+    public static final Holder<PlacedFeature> END_TITANIUM_ORE_PLACED = PlacementUtils.register("end_titanium_ore_placed",
+            ModConfiguredFeatures.END_TITANIUM_ORE, ModOrePlacement.commonOrePlacement(7, // VeinsPerChunk
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> NETHER_TITANIUM_ORE_PLACED = PlacementUtils.register("nether_titanium_ore_placed",
+            ModConfiguredFeatures.NETHER_TITANIUM_ORE, ModOrePlacement.commonOrePlacement(6, // VeinsPerChunk
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
+
+}

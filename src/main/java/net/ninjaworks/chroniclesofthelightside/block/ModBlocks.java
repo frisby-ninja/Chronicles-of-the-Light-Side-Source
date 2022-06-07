@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
@@ -21,10 +22,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.ninjaworks.chroniclesofthelightside.block.custom.GeneratorBE;
-import net.ninjaworks.chroniclesofthelightside.block.custom.GeneratorBlock;
 import net.ninjaworks.chroniclesofthelightside.block.custom.ModFlammableRotatedPillarBlock;
-import net.ninjaworks.chroniclesofthelightside.block.custom.PortalBlock;
 import net.ninjaworks.chroniclesofthelightside.item.ModCreativeModeTab;
 import net.ninjaworks.chroniclesofthelightside.item.ModItems;
 import net.ninjaworks.chroniclesofthelightside.sound.ModSounds;
@@ -62,39 +60,34 @@ public class ModBlocks {
 
     public static final TagKey<Block> TITANIUM_ORE = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(MOD_ID, "titanium_ore"));
 
-    public static final RegistryObject<Block> TITANIUM_ORE_OVERWORLD = BLOCKS.register("titanium_ore_overworld", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> TITANIUM_ORE_OVERWORLD = registerBlock("titanium_ore_overworld", () -> new OreBlock(BLOCK_PROPERTIES, UniformInt.of(3, 7)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> TITANIUM_ORE_NETHER = BLOCKS.register("titanium_ore_nether", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> TITANIUM_ORE_NETHER = registerBlock("titanium_ore_nether", () -> new OreBlock(BLOCK_PROPERTIES, UniformInt.of(4, 7)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> TITANIUM_ORE_END = BLOCKS.register("titanium_ore_end", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> TITANIUM_ORE_END = registerBlock("titanium_ore_end", () -> new OreBlock(BLOCK_PROPERTIES, UniformInt.of(5, 7)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> TITANIUM_BLOCK = BLOCKS.register("titanium_block", () -> new Block(BLOCK_PROPERTIES.sound(ModSounds.TITANIUM_BLOCK_SOUNDS).strength(5f,100f)));
+    public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () -> new Block(BLOCK_PROPERTIES.sound(SoundType.ANVIL).strength(5f,100f)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> TITANIUM_ORE_DEEPSLATE = BLOCKS.register("titanium_ore_deepslate", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> NENDER_BLOCK = registerBlock("nender_block", () -> new Block(BLOCK_PROPERTIES.strength(4f,100f).sound(SoundType.STONE)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> TITANIUM_ORE_INTERNET = BLOCKS.register("titanium_ore_internet", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> BULLETPROOF_GLASS = registerBlock("bulletproof_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(4f, 100f).noOcclusion()), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> INTERBLOCK = BLOCKS.register("interblock", () -> new Block(BLOCK_PROPERTIES.strength(-1f, 3600000)));
+    public static final RegistryObject<Block> TITANIUM_ORE_DEEPSLATE = registerBlock("titanium_ore_deepslate", () -> new Block(BLOCK_PROPERTIES), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> BULLETPROOF_GLASS = BLOCKS.register("bulletproof_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(1f,100f)));
+    public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_LOG)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> PORTAL_BLOCK = BLOCKS.register("portal", PortalBlock::new);
+    public static final RegistryObject<Block> REDWOOD_WOOD = registerBlock("redwood_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_WOOD)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<GeneratorBlock> GENERATOR = BLOCKS.register("generator", GeneratorBlock::new);
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STRIPPED_DARK_OAK_LOG)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<BlockEntityType<GeneratorBE>> GENERATOR_BE = BLOCK_ENTITIES.register("generator", () -> BlockEntityType.Builder.of(GeneratorBE::new, GENERATOR.get()).build(null));
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STRIPPED_OAK_WOOD)), ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> REDWOOD_LOG = BLOCKS.register("redwood_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_LOG)));
-
-    public static final RegistryObject<Block> REDWOOD_WOOD = BLOCKS.register("redwood_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_WOOD)));
-
-    public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = BLOCKS.register("stripped_redwood_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STRIPPED_DARK_OAK_LOG)));public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = BLOCKS.register("stripped_redwood_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STRIPPED_OAK_WOOD)));
-
-            public static final RegistryObject<Block> REDWOOD_PLANKS = BLOCKS.register("redwood_planks",
+            public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -110,9 +103,9 @@ public class ModBlocks {
                 public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
                     return 5;
                 }
-            });
+            }, ModCreativeModeTab.NINJA_GEAR);
 
-    public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("ebony_leaves",
+    public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {

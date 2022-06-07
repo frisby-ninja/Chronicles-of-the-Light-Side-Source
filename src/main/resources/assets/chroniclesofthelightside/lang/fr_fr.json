@@ -14,14 +14,21 @@
   "item.chroniclesofthelightside.titanium_shovel": "Pelle de Titane",
   "item.chroniclesofthelightside.titanium_hoe": "Houe de Titane",
   "item.chroniclesofthelightside.axe": "Hache de Titane",
+  "item.chroniclesofthelightside.frisby_disc": "Disque de Lancer de frisby_ninja",
+  "item.chroniclesofthelightside.atomiser": "Atomiseur",
+  "item.chroniclesofthelightside.atom": "Atome",
+  "item.chroniclesofthelightside.nender_ingot": "Lingot de Nender",
+  "item.chroniclesofthelightside.nender_pickaxe": "Pioche de Nender",
+  "item.chroniclesofthelightside.nender_axe": "Hache de Nender",
+  "item.chroniclesofthelightside.nender_hoe": "Houe de Nender",
+  "item.chroniclesofthelightside.nender_shovel": "Pelle de Nender",
+  "item.chroniclesofthelightside.nender_sword": "Epée de Nender",
 
   "block.chroniclesofthelightside.titanium_block": "Block de Titane",
   "block.chroniclesofthelightside.titanium_ore_nether": "Minerai de Titane du Nether",
   "block.chroniclesofthelightside.titanium_ore_end": "Minerai de Titane de l'Ender",
   "block.chroniclesofthelightside.titanium_ore_deepslate": "Minerai de Titane des Abîmes",
   "block.chroniclesofthelightside.titanium_ore_overworld": "Minerai de Titane",
-  "block.chroniclesofthelightside.titanium_ore_internet": "Minerai de Titane de l'Internet",
-  "block.chroniclesofthelightside.interblock": "Block de l'Internet",
   "block.chroniclesofthelightside.bulletproof_glass": "Verre Pare-Balles",
   "block.chroniclesofthelightside.redwood_log": "Bûche de Séquoia",
   "block.chroniclesofthelightside.redwood_planks": "Planches de Séquoia",
@@ -30,11 +37,15 @@
   "block.chroniclesofthelightside.stripped_redwood_wood": "Bois de Séquoia écorcée",
   "block.chroniclesofthelightside.redwood_sapling": "Pousse de Séquoia",
   "block.chroniclesofthelightside.redwood_leaves": "Feuilles de Séquoia",
-  "item.chroniclesofthelightside.frisby_disc": "Disque de Lancer de frisby_ninja",
-  "item.chroniclesofthelightside.atomiser": "Atomiseur",
-  "item.chroniclesofthelightside.atom": "Atome",
+  "block.chroniclesofthelightside.nender_block": "Block de Nender",
 
   "enchantment.chroniclesofthelightside.lightning_striker": "Frappeur de Foudre",
+
+  "sounds.chroniclesofthelightside.titanium_block_break": "Block de Titane Destruction",
+  "sounds.chroniclesofthelightside.titanium_block_step": "Block de Titane Marche",
+  "sounds.chroniclesofthelightside.titanium_block_place": "Block de Titane Placement",
+  "sounds.chroniclesofthelightside.titanium_block_hit": "Block de Titane Taper",
+  "sounds.chroniclesofthelightside.titanium_block_fall": "Block de Titane Tombé",
 
   "itemGroup.ninjaModTab": "Équipement de Ninja"
 }

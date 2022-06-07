@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "°°-",
+    "°+-",
+    "-+-"
+  ],
+  "key": {
+    "°": {
+      "item": "chroniclesofthelightside:nender_ingot"
+    },
+
+    "-": {
+      "item": "chroniclesofthelightside:electrical_contact"
+    },
+
+    "+": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "chroniclesofthelightside:nender_axe"
+  }
+}

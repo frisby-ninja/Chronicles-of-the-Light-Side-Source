@@ -23,5 +23,16 @@ public class ModTags {
                 return ItemTags.create(new ResourceLocation("forge", name));
             }
         }
+
+        public static final TagKey<Item> NENDER_INGOT = forgeTag("ingots/nender");
+
+        private static TagKey<Item> tag(String name) {
+            return ItemTags.create(new ResourceLocation(chroniclesofthelightside.MOD_ID, name));
+        }
+
+        private static TagKey<Item> forgeTag(String name) {
+            return ItemTags.create(new ResourceLocation("forge", name));
+        }
     }
-}
+    }
+

@@ -6,6 +6,7 @@ import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.ninjaworks.chroniclesofthelightside.block.ModBlocks;
 
 import java.util.List;
@@ -42,7 +44,17 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_OVERWORLD.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_DEEPSLATE.get().defaultBlockState()));
 
+    public static final List<OreConfiguration.TargetBlockState> END_TITANIUM_ORES = List.of(
+            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.TITANIUM_ORE_END.get().defaultBlockState()));
+
+    public static final List<OreConfiguration.TargetBlockState> NETHER_TITANIUM_ORES = List.of(
+            OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE_NETHER.get().defaultBlockState()));
+
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE = FeatureUtils.register("titanium_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 9));
+        Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 9));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> END_TITANIUM_ORE = FeatureUtils.register("end_titanium_ore",
+            Feature.ORE, new OreConfiguration(END_TITANIUM_ORES, 9));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> NETHER_TITANIUM_ORE = FeatureUtils.register("nether_titanium_ore",
+            Feature.ORE, new OreConfiguration(NETHER_TITANIUM_ORES, 9));
 
 }

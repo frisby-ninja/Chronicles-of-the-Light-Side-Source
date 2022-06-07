@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chroniclesofthelightside:stripped_redwood_wood"
+    }
+  ],
+  "result": {
+    "item": "chroniclesofthelightside:redwood_planks",
+    "count": 1
+  }
+}

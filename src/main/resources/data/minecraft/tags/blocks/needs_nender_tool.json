@@ -2,10 +2,9 @@
   "replace": false,
   "values": [
     "chroniclesofthelightside:titanium_ore_overworld",
-    "chroniclesofthelightside:titanium_ore_deepslate",
     "chroniclesofthelightside:titanium_ore_nether",
     "chroniclesofthelightside:titanium_ore_end",
-    "chroniclesofthelightside:titanium_block",
-    "chroniclesofthelightside:nender_block"
+    "chroniclesofthelightside:titanium_ore_internet",
+    "chroniclesofthelightside:titanium_ore_internet"
   ]
 }

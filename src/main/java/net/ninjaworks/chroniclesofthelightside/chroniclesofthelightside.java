@@ -19,7 +19,7 @@ public class chroniclesofthelightside {
     public static final String MOD_ID = "chroniclesofthelightside";
 
     // Directly reference a log4j logger.
-    public static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
     // Add a comment
     public chroniclesofthelightside() {
@@ -37,6 +37,8 @@ public class chroniclesofthelightside {
 
     private void clientSetup(final FMLClientSetupEvent event) {
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.REDWOOD_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BULLETPROOF_GLASS.get(), RenderType.translucent());
 
         ModItemProperties.addCustomItemProperties();

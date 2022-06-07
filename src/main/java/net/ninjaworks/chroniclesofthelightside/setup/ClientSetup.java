@@ -11,7 +11,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.ninjaworks.chroniclesofthelightside.chroniclesofthelightside;
-import net.ninjaworks.chroniclesofthelightside.client.GeneratorModelLoader;
 import net.ninjaworks.chroniclesofthelightside.manasystem.client.KeyBindings;
 import net.ninjaworks.chroniclesofthelightside.manasystem.client.KeyInputHandler;
 import net.ninjaworks.chroniclesofthelightside.manasystem.client.ManaOverlay;
@@ -32,7 +31,7 @@ public class ClientSetup {
 
     @SubscribeEvent
     public static void onModelRegistryEvent(ModelRegistryEvent event) {
-        ModelLoaderRegistry.registerLoader(GeneratorModelLoader.GENERATOR_LOADER, new GeneratorModelLoader());
+
     }
 
     @SubscribeEvent
