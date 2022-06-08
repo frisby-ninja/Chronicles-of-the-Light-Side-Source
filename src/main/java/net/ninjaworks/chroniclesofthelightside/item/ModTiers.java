@@ -13,3 +13,4 @@ public class ModTiers {
             3f, 20, Tags.Blocks.NEEDS_NETHERITE_TOOL,
             () -> Ingredient.of(ModItems.NENDER_INGOT.get()));
 }
+
