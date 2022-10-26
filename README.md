@@ -1,5 +1,5 @@
-# Chronicles of the Light Side Source Code 1.18.x
-This is the official source code for the 1.18.x version of the Chronicles of the Light Side
+# Chronicles of the Light Side Source Code
+This is the official source code for all versions of the Chronicles of the Light Side
 
 =\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=\-+-/=
 
